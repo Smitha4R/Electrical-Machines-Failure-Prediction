@@ -39,6 +39,6 @@ Through tree-based global feature importances and targeted LIME localized diagno
 - The Structural Corroboration: Deeply negative Ultrasonic Proximity (USS) readings systematically accompany these chemical spikes, indicating internal mechanical shifting or warping.
 - The Isolation Variable: Input Pressure (IP) remained consistently stable within normal bounds during failure events, systematically ruling out fluid line supply faults and confirming the breakdowns are entirely internal to the units.
 
-###🚀 Production Deployment Readiness
+### 🚀 Production Deployment Readiness
 
 The entire pipeline has been fully decoupled from the training space. By serializing both the fitted StandardScaler and the champion Random Forest binaries via joblib, we successfully implemented a clean, warning-free production wrapper function (predict_machine_health). This function accepts raw telemetry streams, seamlessly constructs transient pandas payloads to satisfy feature-name alignment, and yields instant operational risk scores—providing an end-to-end blueprint ready for immediate integration into an industrial SCADA environment or web-based supervisory dashboard.
